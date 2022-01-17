@@ -8,6 +8,6 @@
   display: flex;
 }
 .pages{
-  flex: 8;
-  background-color: bisque;
+  flex:8;
+  padding: 20px;
 }

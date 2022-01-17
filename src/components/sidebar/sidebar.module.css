@@ -2,9 +2,10 @@
   flex: 2;
   height: calc(100vh - 60px);
   background-color: rgb(251, 251, 255);
-  /* position: sticky; */
-  /* top: 60px; */
+  position: sticky;
+  top: 60px;
 }
+
 .sidebarWrapper{
   padding-left: 30px;
 
@@ -29,7 +30,7 @@
   padding: 2px;
 }
 .sidebarIcon:hover{
-  background-color: #ebebeb;
+  background-color: #e0dfdf60;
   cursor: pointer;
 }
 
