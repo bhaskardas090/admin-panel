@@ -1,4 +1,5 @@
 import styles from './sidebar.module.css'
+// ! Icon Image Import
 import home from '../../img/home.png'
 import analytics from '../../img/analytics.png'
 import sales from '../../img/sales.png'
@@ -10,6 +11,8 @@ import mail from '../../img/mail.png'
 import feedback from '../../img/feedback.png'
 import message from '../../img/message.png'
 import manage from '../../img/manage.png'
+// ! Library Imports
+import {Link} from 'react-router-dom';
 
 export default function Sidebar() {
   return (
@@ -20,10 +23,12 @@ export default function Sidebar() {
             Dashboard
           </div>
           <div className={styles.sidebarIconGroup}>
-            <div className={styles.sidebarIcon}>
-              <img src={home} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Home</span>
-            </div>
+            <Link to="/" className={styles.link}>
+              <div className={styles.sidebarIcon}>
+                <img src={home} alt="" className={styles.icon}/>
+                <span className={styles.iconText}>Home</span>
+              </div>
+            </Link>
             <div className={styles.sidebarIcon}>
               <img src={analytics} alt="" className={styles.icon}/>
               <span className={styles.iconText}>Analytics</span>
@@ -39,10 +44,12 @@ export default function Sidebar() {
             Quick Menu
           </div>
           <div className={styles.sidebarIconGroup}>
-            <div className={styles.sidebarIcon}>
-              <img src={users} alt="users" className={styles.icon}/>
-              <span className={styles.iconText}>User</span>
-            </div>
+            <Link to="/users" className={styles.link}>
+              <div className={styles.sidebarIcon}>
+                <img src={users} alt="users" className={styles.icon}/>
+                <span className={styles.iconText}>User</span>
+              </div>
+            </Link>
             <div className={styles.sidebarIcon}>
               <img src={products} alt="products" className={styles.icon}/>
               <span className={styles.iconText}>Products</span>

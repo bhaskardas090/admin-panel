@@ -7,7 +7,7 @@ import WidgetBg from '../../components/widgetBg/WidgetBg';
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.home}>
       <FeaturedInfo/>
       <Chart title="Active Users" data={data} datakey="name"/>
       <div className={styles.homeWidgets}>
