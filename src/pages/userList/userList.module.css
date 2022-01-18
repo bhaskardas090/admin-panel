@@ -1,0 +1,33 @@
+.userList{
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.username{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.edit, .delete{
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.edit{
+  background-color: #c5cae9;
+  color:#3f51b5; 
+}
+
+.delete{
+  background-color: #ffcdd2;
+  color:#f44336;
+}
