@@ -2,6 +2,8 @@
   padding: 20px;
   flex: 4;
 }
+
+/* Title Button Part */
 .titleButton{
   display: flex;
   justify-content: space-between;
@@ -16,12 +18,14 @@
   color: white;
   padding: 7px 25px;
 }
+/* End of Title Button Part */
 
 .userDisplayEdit{
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
 }
+
 .displayUser{
   padding: 20px;
   flex: 2;
@@ -29,9 +33,101 @@
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.userMainDetails{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.userMainDetails>img{
+  width: 50px;
+}
+.nameProfesson>h5{
+  font-size: 16px;
+}
+.nameProfesson>p{
+  font-size: 14px;
+  color: rgb(158, 158, 158);
+}
+
+/* Account Details */
+.accountDetailsTitle, .contactDetailsTitle{
+  font-size: 14px;
+  color: rgb(158, 158, 158);
+  font-weight: 600;
+  margin: 25px 0;
+}
+
+.nameSection, .dateSection, .numberSection, .emailSection, .locationSection{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Edit Form Section */
 .editForm{
   flex: 4;
   padding: 20px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
+  display: flex;
+  justify-content: space-between;
 }
+
+.editFormSection{
+  flex: 4;
+}
+.editFormPart{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.editFormSection>form>label{
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+  width: 100%;
+}
+.editFormSection>form>input{
+  border: none;
+  width: 300px;
+  height: 30px;
+  border-bottom: 1px grey solid;
+  margin-bottom: 15px;
+}
+.editFormSection>form>input:focus{
+  outline: none;
+}
+.imgUpload{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.imageUploadSection{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.imageUploadSection>img{
+  width: 200px;
+  border-radius: 20px;
+}
+.uploadButton{
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(22, 35, 231);
+  color: white;
+  padding: 7px 50px;
+}
+.imageUploadSection>label{
+  cursor: pointer;
+}
+
+.file{
+  display: none;
+}
+
+
+
