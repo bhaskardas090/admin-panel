@@ -2,8 +2,10 @@ import styles from './userList.module.css';
 import { DataGrid } from '@mui/x-data-grid';
 import avatar from '../../img/man.png'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 
-const columns = [
+export default function UserList() {
+  const columns = [
   { field: 'id', headerName: 'ID', width: 100 },
   { field: 'username', headerName: 'User Name', width: 230, renderCell: (params) => {
     return(
@@ -35,7 +37,7 @@ const columns = [
           <Link to={`/user/${params.row.id}`}>
             <button className={styles.edit}>Edit</button>
           </Link>
-          <button className={styles.delete}>Delete</button>
+          <button className={styles.delete} onClick={()=>handleDelete(params.row.id)}>Delete</button>
         </div>
       )
     }
@@ -54,11 +56,16 @@ const rows = [
   { id: 9, username: 'Roxie Rudis', email: 'Harvey@gmail.com', status: 'active', transactions: 1000, imgUrl: {avatar} },
 ];
 
-export default function UserList() {
+  const [data, setData] = useState(rows);
+
+
+  const handleDelete = (id) => {
+  setData(prevData => prevData.filter(item => item.id !== id));
+}
   return (
     <div className={styles.userList}>
       <DataGrid
-        rows={rows}
+        rows={data}
         columns={columns}
         pageSize={7}
         rowsPerPageOptions={[5]}

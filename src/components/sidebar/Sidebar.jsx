@@ -50,10 +50,12 @@ export default function Sidebar() {
                 <span className={styles.iconText}>User</span>
               </div>
             </Link>
-            <div className={styles.sidebarIcon}>
-              <img src={products} alt="products" className={styles.icon}/>
-              <span className={styles.iconText}>Products</span>
-            </div>
+            <Link to="/products" className={styles.link}>
+              <div className={styles.sidebarIcon}>
+                <img src={products} alt="products" className={styles.icon}/>
+                <span className={styles.iconText}>Products</span>
+              </div>
+            </Link>
             <div className={styles.sidebarIcon}>
               <img src={transactions} alt="transactions" className={styles.icon}/>
               <span className={styles.iconText}>Transactions</span>
