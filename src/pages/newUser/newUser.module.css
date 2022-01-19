@@ -1,0 +1,66 @@
+.newUser{
+  flex:4;
+  padding: 20px;
+}
+
+.registrationForm{
+  display:flex;
+  margin-top: 20px;
+}
+
+.firstCol{
+  flex: 1;
+  flex-wrap: wrap;
+
+}
+
+.secondCol{
+  flex: 1;
+}
+
+.firstCol>label, .secondCol>label{
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: block;
+  color:  grey;
+  font-weight: 600;
+}
+.input, .option{
+  border: none;
+  width: 400px;
+  height: 40px;
+  border: 1px grey solid;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+}
+.input:placeholder-shown{
+  font-size: 13px;
+  padding-left: 10px;
+}
+.gender{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.radio{
+  width: 15px;
+  height: 15px;
+  
+}
+.firstCol>input:focus, .secondCol>input:focus, .option:focus{
+  outline: none;
+}
+
+.createButton{
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: rgb(22, 35, 231);
+  color: white;
+  padding: 7px 100px;
+  margin-top: 40px;
+}

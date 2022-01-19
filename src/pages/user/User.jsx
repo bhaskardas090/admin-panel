@@ -1,7 +1,8 @@
 import styles from './user.module.css';
-import avatar from '../../img/man.png';
+import {Link} from 'react-router-dom'; 
 // ! Icon Import
 import {Person, DateRange, PhoneAndroid, Mail, MyLocation, FileUpload} from '@mui/icons-material';
+import avatar from '../../img/man.png';
 import krishna from '../../img/krishna.png';
 
 export default function user() {
@@ -9,7 +10,9 @@ export default function user() {
     <div className={styles.user}>
       <div className={styles.titleButton}>
         <h2 className={styles.title}>Edit User</h2>
-       <button className={styles.create}>Create</button>
+        <Link to="/newUser">
+          <button className={styles.create}>Create</button>
+        </Link>
       </div>
       <div className={styles.userDisplayEdit}>
         {/* // ! User Display Are */}
