@@ -12,3 +12,11 @@
   flex:8;
   padding: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+  .pages{
+    padding: 0px;
+    width: 100%;
+    overflow-x: hidden;
+  }
+}

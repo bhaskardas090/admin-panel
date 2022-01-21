@@ -5,3 +5,11 @@
   display: flex;
   margin: 20px;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .homeWidgets{
+    margin: 20px;
+    flex-direction: column;
+  }
+}

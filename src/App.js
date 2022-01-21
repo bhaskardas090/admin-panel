@@ -28,7 +28,7 @@ function App() {
             <Route path="/newProduct" element={<NewProduct />} />
           </Routes>
         </div>
-        <MobileSidebar />
+        {/* <MobileSidebar /> */}
       </div>
     </div>
   );

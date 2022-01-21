@@ -39,3 +39,18 @@
 .view{
   width: 18px;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .widgetSm{
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+  }
+  .button{
+    font-size: 13px;
+  }
+  .view{
+    width: 14px;
+  }
+}

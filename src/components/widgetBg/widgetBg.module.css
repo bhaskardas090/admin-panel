@@ -44,3 +44,33 @@ th{
   background-color: #ffcdd2;
   color:#f44336;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .widgetBg{
+    padding: 0;
+    width: 95%;
+    box-shadow: none;
+    margin-top: 20px;
+  }
+  .transactions{
+    border-spacing: 20px;
+  }
+  .profileImg{
+    width: 30px;
+    height: 30px;
+  }
+  .profileName{
+    font-size: 14px;
+  }
+  .date{
+    font-size: 13px;
+  }
+  .value{
+    font-size: 13px;
+  }
+  .widgetBgButton{
+    font-size: 13px;
+    padding: 5px;
+  }
+}
