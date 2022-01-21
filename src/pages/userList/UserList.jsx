@@ -6,8 +6,8 @@ import { useState } from 'react';
 
 export default function UserList() {
   const columns = [
-  { field: 'id', headerName: 'ID', width: 100 },
-  { field: 'username', headerName: 'User Name', width: 230, renderCell: (params) => {
+  { field: 'id', headerName: 'ID', width: 50 },
+  { field: 'username', headerName: 'User Name', width: 200, renderCell: (params) => {
     return(
       <div className={styles.username}>
         <img src={avatar} alt="avatar" />
@@ -70,6 +70,7 @@ const rows = [
         pageSize={7}
         rowsPerPageOptions={[5]}
         checkboxSelection
+        className={styles.dataGrid}
       />
     </div>
   )

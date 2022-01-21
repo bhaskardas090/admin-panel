@@ -36,3 +36,14 @@
   background-color: #ffcdd2;
   color:#f44336;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .productList{
+    padding: 0;
+    height: 500px ;
+    width: 100%;
+    width: 100vw;
+
+  }
+}

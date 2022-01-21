@@ -64,3 +64,13 @@
   padding: 7px 100px;
   margin-top: 40px;
 }
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .registrationForm{
+    flex-direction: column-reverse;
+  }
+  .firstCol>input, .secondCol>input, .option{
+  width: 90vw;
+}
+}
