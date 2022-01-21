@@ -16,6 +16,10 @@
   color: #5550bd;
   margin-left: 5%;
 }
+.link{
+  text-decoration: none;
+  color: inherit;
+}
 
 .topbarIcons{
   display: flex;

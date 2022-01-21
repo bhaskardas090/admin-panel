@@ -6,6 +6,7 @@
 .titleCreate{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .productImg{
@@ -129,4 +130,22 @@
 
 .file{
   display: none;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (max-width: 600px) {
+  .salesProductDetails{
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .editFormPart{
+    margin: 0;
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .imageUploadSection{
+    justify-content:center;
+    margin: 20px 0;
+  }
 }
