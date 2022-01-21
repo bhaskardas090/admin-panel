@@ -45,3 +45,11 @@
   font-size: 14px;
   color: rgb(124, 124, 124);
 }
+
+/* RESPONSIVE DESIGN */
+
+@media only screen and (max-width: 600px) {
+  .featuredInfo{
+    flex-direction: column;
+  }
+}

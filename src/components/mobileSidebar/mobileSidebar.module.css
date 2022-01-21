@@ -1,0 +1,8 @@
+.mobileSidebar{
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  font-size: 18px;
+  bottom: 20%;
+  left: 10%;
+}

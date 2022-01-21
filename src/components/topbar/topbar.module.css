@@ -52,3 +52,11 @@
   margin-left: 20px;
   margin-right: 20px;
 }
+
+/* RESPONSIVE DESIGN PART */
+
+@media only screen and (max-width: 600px) {
+  .avatar{
+    margin-left:0;
+  }
+}
