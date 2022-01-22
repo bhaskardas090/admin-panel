@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
 }
+.app{
+  position: relative;
+}
 .main{
   display: flex;
   position: relative;

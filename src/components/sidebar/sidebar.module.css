@@ -6,6 +6,11 @@
   top: 60px;
 }
 
+.sidebarMobile{
+  height: 100%;
+  position: relative;
+}
+
 .link{
   text-decoration: none;
   color: inherit;
@@ -13,6 +18,7 @@
 
 .sidebarWrapper{
   padding-left: 30px;
+  position: relative;
 
 }
 
@@ -45,10 +51,10 @@
   margin-right: 5px;
 }
 
-
 /* RESPONSIVE DESIGN */
 @media only screen and (max-width: 600px) {
   .sidebar{
-    display: none;
+    display: none; 
   }
+  
 }

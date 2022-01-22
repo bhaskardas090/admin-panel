@@ -10,26 +10,38 @@ import ProductList from './pages/productList/ProductList';
 import Product from './pages/product/Product';
 import NewProduct from './pages/newProduct/NewProduct';
 import MobileSidebar from './components/mobileSidebar/MobileSidebar';
+import { useState } from 'react';
 
 function App() {
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   return (
     <div className="app">
-      <Topbar />
-      <div className="main">
-        <Sidebar />
-        <div className="pages">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/users" element={<UserList />} />
-            <Route path="/user/:userId" element={<User />} />
-            <Route path="/newUser" element={<NewUser />} />
-            <Route path="/products" element={<ProductList />} />
-            <Route path="/product/:productId" element={<Product />} />
-            <Route path="/newProduct" element={<NewProduct />} />
-          </Routes>
-        </div>
-        {/* <MobileSidebar /> */}
-      </div>
+      {!mobileMenu && (
+        <>
+          <Topbar setMobileMenu={setMobileMenu} setIsMobile={setIsMobile} />
+          <div className="main">
+            <Sidebar />
+            <div className="pages">
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/users" element={<UserList />} />
+                <Route path="/user/:userId" element={<User />} />
+                <Route path="/newUser" element={<NewUser />} />
+                <Route path="/products" element={<ProductList />} />
+                <Route path="/product/:productId" element={<Product />} />
+                <Route path="/newProduct" element={<NewProduct />} />
+              </Routes>
+            </div>
+          </div>
+        </>
+      )}
+      {mobileMenu && (
+        <MobileSidebar
+          setIsMobile={setIsMobile}
+          setMobileMenu={setMobileMenu}
+        />
+      )}
     </div>
   );
 }

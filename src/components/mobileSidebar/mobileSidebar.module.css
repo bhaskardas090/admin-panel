@@ -1,8 +1,11 @@
-.mobileSidebar{
+.mobilemenu{
   position: absolute;
-  color: red;
   font-weight: bold;
   font-size: 18px;
-  bottom: 20%;
-  left: 10%;
+  /* background-color:black;
+  color: white; */
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 1000;
 }

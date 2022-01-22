@@ -1,10 +1,11 @@
 import styles from './mobileSidebar.module.css';
+// import {Menu} from '@mui/icons-material';
+import Sidebar from '../sidebar/Sidebar';
 
-export default function MobileSidebar() {
+export default function MobileSidebar({setIsMobile, setMobileMenu}) {
   return (
-  <div className={styles.mobileSidebar}>
-    <button className={styles.mobileSidebarIcon}></button>
-    <p>Mobile</p>
+  <div className={styles.mobilemenu}>
+    <Sidebar setIsMobile={setIsMobile} setMobileMenu={setMobileMenu}/>
   </div>
   );
 }

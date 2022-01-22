@@ -14,9 +14,9 @@ import manage from '../../img/manage.png'
 // ! Library Imports
 import {Link} from 'react-router-dom';
 
-export default function Sidebar() {
+export default function Sidebar({setIsMobile,setMobileMenu}) {
   return (
-    <div className={styles.sidebar}>
+    <div className={setIsMobile ? `${styles.sidebarMobile}`: `${styles.sidebar}`} onClick={()=> setMobileMenu(false)}>
       <div className={styles.sidebarWrapper}>
         <div className={styles.sidebarCategories}>
           <div className={styles.sidebarHeader}>
