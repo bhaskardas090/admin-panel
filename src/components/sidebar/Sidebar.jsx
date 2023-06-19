@@ -26,16 +26,16 @@ export default function Sidebar({setIsMobile,setMobileMenu}) {
             <Link to="/" className={styles.link}>
               <div className={styles.sidebarIcon}>
                 <img src={home} alt="" className={styles.icon}/>
-                <span className={styles.iconText}>Home</span>
+                <span className={styles.iconText}>Home ~</span>
               </div>
             </Link>
             <div className={styles.sidebarIcon}>
               <img src={analytics} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Analytics ~</span>
+              <span className={styles.iconText}>Analytics</span>
             </div>
             <div className={styles.sidebarIcon}>
               <img src={sales} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Sales ~</span>
+              <span className={styles.iconText}>Sales</span>
             </div>
           </div>        
         </div>
@@ -47,25 +47,63 @@ export default function Sidebar({setIsMobile,setMobileMenu}) {
             <Link to="/users" className={styles.link}>
               <div className={styles.sidebarIcon}>
                 <img src={users} alt="users" className={styles.icon}/>
-                <span className={styles.iconText}>User</span>
+                <span className={styles.iconText}>User~ </span>
               </div>
             </Link>
             <Link to="/products" className={styles.link}>
               <div className={styles.sidebarIcon}>
                 <img src={products} alt="products" className={styles.icon}/>
-                <span className={styles.iconText}>Products</span>
+                <span className={styles.iconText}>Products ~</span>
               </div>
             </Link>
             <Link to="/newProduct" className={styles.link}>
             <div className={styles.sidebarIcon}>
               <img src={transactions} alt="transactions" className={styles.icon}/>
-              <span className={styles.iconText}>Add Product</span>
+              <span className={styles.iconText}>Add Product ~</span>
             </div>
             </Link>
-            {/* <div className={styles.sidebarIcon}>
+            <div className={styles.sidebarIcon}>
               <img src={reports} alt="reports" className={styles.icon}/>
               <span className={styles.iconText}>Reports</span>
-            </div> */}
+            </div>
+          </div>        
+        </div>
+        <div className={styles.sidebarCategories}>
+          <div className={styles.sidebarHeader}>
+            Notificatons
+          </div>
+          <div className={styles.sidebarIconGroup}>
+            <div className={styles.sidebarIcon}>
+              <img src={mail} alt="mail" className={styles.icon}/>
+              <span className={styles.iconText}>Mail</span>
+            </div>
+            <div className={styles.sidebarIcon}>
+              <img src={feedback} alt="feedback" className={styles.icon}/>
+              <span className={styles.iconText}>Feedback</span>
+            </div>
+            <div className={styles.sidebarIcon}>
+              <img src={message} alt="message" className={styles.icon}/>
+              <span className={styles.iconText}>Message</span>
+            </div>
+          </div>        
+        </div>
+        <div className={styles.sidebarCategories}>
+          <div className={styles.sidebarHeader}>
+            Staff
+          </div>
+          <div className={styles.sidebarIconGroup}>
+            <div className={styles.sidebarIcon}>
+              <img src={manage} alt="manage" className={styles.icon}/>
+              <span className={styles.iconText}>Manage</span>
+            </div>
+            <div className={styles.sidebarIcon}>
+              <img src={analytics} alt="" className={styles.icon}/>
+              <span className={styles.iconText}>Analytics</span>
+            </div>
+            <div className={styles.sidebarIcon}>
+              <img src={reports} alt="reports" className={styles.icon}/>
+              <span className={styles.iconText}>Reports</span>
+            </div>
           </div>        
         </div>
       </div>

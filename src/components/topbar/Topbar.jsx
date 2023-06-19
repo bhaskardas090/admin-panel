@@ -16,7 +16,7 @@ export default function Topbar({setMobileMenu, setIsMobile}) {
     <div className={styles.topbar}>
       <div className={styles.topbarLogo}>
         <Link to="/" className={styles.link}>
-          iambhaskar
+          iambhaskar <p style={{display: 'inline', fontSize: '1rem'}}>&lt;~ are active links&gt;</p>
         </Link>
       </div>
       <div className={styles.topbarIcons}>
