@@ -31,11 +31,11 @@ export default function Sidebar({setIsMobile,setMobileMenu}) {
             </Link>
             <div className={styles.sidebarIcon}>
               <img src={analytics} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Analytics</span>
+              <span className={styles.iconText}>Analytics ~</span>
             </div>
             <div className={styles.sidebarIcon}>
               <img src={sales} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Sales</span>
+              <span className={styles.iconText}>Sales ~</span>
             </div>
           </div>        
         </div>
@@ -56,52 +56,16 @@ export default function Sidebar({setIsMobile,setMobileMenu}) {
                 <span className={styles.iconText}>Products</span>
               </div>
             </Link>
+            <Link to="/newProduct" className={styles.link}>
             <div className={styles.sidebarIcon}>
               <img src={transactions} alt="transactions" className={styles.icon}/>
-              <span className={styles.iconText}>Transactions</span>
+              <span className={styles.iconText}>Add Product</span>
             </div>
-            <div className={styles.sidebarIcon}>
+            </Link>
+            {/* <div className={styles.sidebarIcon}>
               <img src={reports} alt="reports" className={styles.icon}/>
               <span className={styles.iconText}>Reports</span>
-            </div>
-          </div>        
-        </div>
-        <div className={styles.sidebarCategories}>
-          <div className={styles.sidebarHeader}>
-            Notificatons
-          </div>
-          <div className={styles.sidebarIconGroup}>
-            <div className={styles.sidebarIcon}>
-              <img src={mail} alt="mail" className={styles.icon}/>
-              <span className={styles.iconText}>Mail</span>
-            </div>
-            <div className={styles.sidebarIcon}>
-              <img src={feedback} alt="feedback" className={styles.icon}/>
-              <span className={styles.iconText}>Feedback</span>
-            </div>
-            <div className={styles.sidebarIcon}>
-              <img src={message} alt="message" className={styles.icon}/>
-              <span className={styles.iconText}>Message</span>
-            </div>
-          </div>        
-        </div>
-        <div className={styles.sidebarCategories}>
-          <div className={styles.sidebarHeader}>
-            Staff
-          </div>
-          <div className={styles.sidebarIconGroup}>
-            <div className={styles.sidebarIcon}>
-              <img src={manage} alt="manage" className={styles.icon}/>
-              <span className={styles.iconText}>Manage</span>
-            </div>
-            <div className={styles.sidebarIcon}>
-              <img src={analytics} alt="" className={styles.icon}/>
-              <span className={styles.iconText}>Analytics</span>
-            </div>
-            <div className={styles.sidebarIcon}>
-              <img src={reports} alt="reports" className={styles.icon}/>
-              <span className={styles.iconText}>Reports</span>
-            </div>
+            </div> */}
           </div>        
         </div>
       </div>
